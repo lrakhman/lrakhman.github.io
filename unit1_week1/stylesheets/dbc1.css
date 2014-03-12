@@ -1,36 +1,25 @@
-html {
-	margin: 0;
-	padding: 0;
-	}
 body { 
 	font: georgia, sans-serif;
-	background: #EDE2DC; 
+	background: #EBF5FF; 
 	margin: 25px; 
 	padding: 0;
 	}
+#cursive {
+	font-family: cursive;
+}
+#section_1 {
+	font-family: serif;
+	color: #303030;
+	text-align: justify;
+}
+.section {
+	color: #303030;
+	font-weight: bold;
+	font-size: 15px
+	font-family: monospace;
 p { 
 	color: #303030;
 	margin-top: auto; 
 	text-align: justify;
 	}
 
-h3 { 
-	font: italic normal georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
