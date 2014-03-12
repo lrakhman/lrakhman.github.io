@@ -1,0 +1,36 @@
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: georgia, sans-serif;
+	background: #EDE2DC; 
+	margin: 25px; 
+	padding: 0;
+	}
+p { 
+	color: #303030;
+	margin-top: auto; 
+	text-align: justify;
+	}
+
+h3 { 
+	font: italic normal georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
