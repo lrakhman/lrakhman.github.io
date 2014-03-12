@@ -1,28 +1,34 @@
 body { 
 	font: georgia, sans-serif;
 	background: #EBF5FF; 
-	margin: 25px; 
 	padding: 0;
-	}
+	border: 20px;
+	margin: 25px;
+}
+
 #cursive {
 	font-family: cursive;
 }
+
 #section_1 {
 	font-family: serif;
 	color: #303030;
 	text-align: justify;
 }
+
 .section {
 	color: #303030;
 	font-weight: bold;
 	font-size: 15px;
 	font-family: monospace;
 }
+
 p { 
 	color: #303030;
 	margin-top: auto; 
 	text-align: justify;
 	}
+
 span {
     color:#388E8E;
     font-size: 20px;
@@ -30,36 +36,46 @@ span {
 
 #name {
     font-size: 20px;
+    font-family: cursive;
+    
 }
+
 a:link { 
 	font-weight: bold; 
     text-decoration: none; 
 	color: #494259;
 	}
+
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #D4CDDC;
 	}
+
 a:hover, a:active { 
 	text-decoration: underline; 
 	color: #9685BA;
+	font-weight: bold;
 	}
+
 img {
     float: right;
+	display: block;
+	margin: auto;
 }
+
 h6 {
     font-size: 15px;
 }
 
 #header {
-	z-index: 1;
 	position: relative;
-	width: 97.5%;
-	margin-top: -20px;
+	width: 100%;
+	margin-top: -10px;
 	height: 60px;
 	background-color: #668284;
 	margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 
@@ -69,14 +85,8 @@ h4 {
 	font-family: Verdana, sans-serif;
 }
 
-
-
 li {
 	list-style-type: square;
-}
-
-a:hover {
-	font-weight: bold;
 }
 
 #footer {
@@ -88,6 +98,7 @@ a:hover {
 	font-size: 14px;
 	text-align: center;
 	color: #ffffff;
+	border-radius: 5px;
 }
 
 #sidebar {
@@ -96,4 +107,5 @@ a:hover {
     background-color: #363142;
     height: 400px;
     width: 20%;
+    border-radius: 5px;
 	}
