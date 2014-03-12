@@ -6,10 +6,6 @@ body {
 	margin: 25px;
 }
 
-#cursive {
-	font-family: cursive;
-}
-
 #section_1 {
 	font-family: serif;
 	color: #303030;
@@ -27,7 +23,7 @@ p {
 	color: #303030;
 	margin-top: auto; 
 	text-align: justify;
-	}
+}
 
 span {
     color:#388E8E;
@@ -35,28 +31,28 @@ span {
 }
 
 #name {
-    font-size: 20px;
-    font-family: cursive;
-    
+    font-size: 35px;
+    font-family: serif;
+    text-align: justify;
+    color:#e5e5e5;
 }
 
 a:link { 
 	font-weight: bold; 
     text-decoration: none; 
 	color: #494259;
-	}
+}
 
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #D4CDDC;
-	}
+}
 
 a:hover, a:active { 
 	text-decoration: underline; 
 	color: #9685BA;
-	font-weight: bold;
-	}
+}
 
 img {
     float: right;
@@ -76,8 +72,8 @@ h6 {
 	background-color: #668284;
 	margin-bottom: 10px;
     border-radius: 5px;
+    text-align: center;
 }
-
 
 h4 {
 	margin-left: 5px;
@@ -87,6 +83,10 @@ h4 {
 
 li {
 	list-style-type: square;
+}
+
+a:hover {
+	font-weight: bold;
 }
 
 #footer {
@@ -101,6 +101,15 @@ li {
 	border-radius: 5px;
 }
 
+#selfie {
+	text-align: right;
+
+}
+
+#pic {
+    text-align: center;
+}
+
 #sidebar {
 	margin-right: 600px; 
 	position: relative; 
@@ -108,4 +117,4 @@ li {
     height: 400px;
     width: 20%;
     border-radius: 5px;
-	}
+}
