@@ -23,12 +23,9 @@ a:hover, a:active {
 	color: #9685BA;
 }
 
-section {
+h4, h2, section p{
 	position: relative;
-	width: 80%;
-	margin-top: -10px;
-	height: 60px;
-	background-color: #57c7ad;
+    background-color: #57c7ad;
 	margin-bottom: 10px;
-    border-radius: 5px;
-    text-align: center;
+    text-align: left;
+}
