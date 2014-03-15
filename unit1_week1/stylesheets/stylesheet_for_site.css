@@ -221,6 +221,15 @@ footer .nav {
 footer nav a:hover {
   color: #FFEECC;
 }
+footer p{
+    color: #e5e5e5;
+    font-size: 1.2em;
+}
+
+footer a{
+    color:#000;
+    font-family: Garamond;
+}
 
 footer:after {
   /* clearfix hack */
