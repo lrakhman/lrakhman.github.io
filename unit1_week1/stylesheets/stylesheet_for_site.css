@@ -100,14 +100,10 @@ header:after {
   clear: both;
 }
 
-ul li {
-  list-style-type: none;
-}
-
 
 /* Main */
 
-ul li {
+#main ul li {
     list-style-type: square;
 }
 #main section {
