@@ -169,7 +169,7 @@ header:after {
 }
 
 #organizations ul {
-  margin: 50px;
+  margin: 30px;
   position: relative;
 }
 #organizations ul li {
@@ -224,6 +224,8 @@ footer nav a:hover {
 footer p{
     color: #e5e5e5;
     font-size: 1.2em;
+    padding: 1.5%;
+    text-align: center;
 }
 
 footer a{
