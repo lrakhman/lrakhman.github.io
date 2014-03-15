@@ -103,7 +103,7 @@ header:after {
 
 /* Main */
 
-ul li {
+#main ul li {
     list-style-type: square;
 }
 #main section {
