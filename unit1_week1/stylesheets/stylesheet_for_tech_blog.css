@@ -1,0 +1,44 @@
+body { 
+	font: georgia, sans-serif;
+	background: #404040; 
+	padding: 0;
+	border: 20px;
+	margin: 25px;
+}
+
+a {
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+a:link { 
+	font-weight: bold; 
+    text-decoration: none; 
+	color: #494259;
+}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+}
+
+a:hover { 
+	text-decoration: underline; 
+}
+
+h3, section {
+	position: relative;
+    background-color: #57c7ad;
+	margin-bottom: 10px;
+    text-align: left;
+    padding: 2%;
+}
+
+ol li{
+    font-size: 20px;
+    color: #39618a;
+}
+
+h2 {
+    color: #9fcdb5;
+}
