@@ -26,7 +26,7 @@ a:hover {
 	text-decoration: underline; 
 }
 
-section {
+h4, section {
 	position: relative;
     background-color: #57c7ad;
 	margin-bottom: 10px;
@@ -35,7 +35,7 @@ section {
 }
 
 ol li{
-    font-size: 20px;
+    font-size: 15px;
     color: #39618a;
 }
 
