@@ -7,49 +7,47 @@
   </head>
     <body>
 
-    <h4>Let's talk about the two list-like items in Ruby: the hash and the array. Which one do you use, and when?</h4>  
+    <h4>Let's talk about the two list-like elements in Ruby: the hash and the array. Which one do you use, and when?</h4>  
 
 	  <section>
-  		<p>Exercise 1:<br />
+  		<h4>The Array</h4>
 
-        <strong>When you think of the times in your life where you’ve been the happiest, the proudest, or the most satisfied, which of the following values come to mind?</strong><br /><br />
+      <p>Let's keep this sweet and simple: an array is a list of items that is in a particular order.</p>
 
-        Accomplishment Accountability Achievement Activism Adventure Affection Ambition Autonomy Challenge Close relationships Commitment Community Compassion Competence Competition Confidence Conformity Control Coolness under fire Cooperation Courage Creativity Credibility Decisiveness Economic security Effectiveness Efficiency Enthusiasm Environmentalism Excellence Excitement Fairness Faith Fame Free time Freedom Friendships Growth Having a family Health Helping other people Helping society Honesty Hospitality Independence Influence Inner harmony Insight Inspiration Integrity Intellectual status Introspection Justice Knowledge Leadership Location Loyalty Meaningful work Mentorship Merit Money Movement Music Nature Openness Order Patriotism Peace Persistance Personal development Physical challenge Pleasure Power and authority Privacy Public service Purity Quality Recognition Reputation Responsibility Romance Security Self-knowledge Self-reliance Self-respect Serenity Sophistication Spirituality Stability Status Tranquility Truth Vibrancy Volunteering Wealth Will-power Wisdom [add any that I missed]</p> 
+      <p>Most of the following info is taken from Udemy.com's blog, which I thought was a great resource and very well written:</p>
 
-        <p><strong>Here are the values I picked:</strong></p>
-        <ul>
-          <li>Accomplishment</li>
-          <li>Achievemtent</li>
-          <li>Commitment</li>
-          <li>Confidence</li>
-          <li>Creativity</li>
-          <li>Health</li>
-          <li>Helping those in need</li>
-          <li>Wisdom</li>
-        </ul>
+      <p>Order matters!</p> 
 
-      <p>Exercise 2:<br />
+      <p>The first thing to learn about arrays is that they are ordered. An array starts at a specific point, goes forwards to the end, and then stops. Each one of the items in an array has specific address, and you can always count on each address being one higher than the previous address. This is one feature that makes arrays so useful. You can store anything in an array, and know that unless the array has been modified, whatever came before it will always come before it, and whatever comes after it will always come after it. Unlike some data structures, the ordering in an array is significant. You can depend on it.</p>
 
-        <strong>Pick one value and write a couple of sentences about why one of the values you chose is important to you.</strong></p> 
+      <p>Integer-Indexed</p>
 
-        I'm going to write about <em>creativity</em>. Being creative (whether writing, painting, problem-solving, or building something) has always been key in my life. I am really happy when I am challenged creatively, and when I find solutions to those challenges. I'm a trained poet, and this means that when I create something that works well it makes me super happy. Above all, I like to use my brain. It's very important for me to consistently use my skills and knowledge at work, because when I get bored I get lazy! Which is a fault, but one that I've learned to avoid. Creatively speaking, I'm at my best when challenged to think outside of the proverbial box and to come up with ideas that seek to solve multiple problems at once. That's why creativity is so important to me: I believe it's a value that allows me to thrive. 
+      <p>When they say that an array is integer indexed, what they mean is that each item in the array can be accessed by referencing an integer that represents its position in the array. The item referenced by passing any specific integer will always come back when you reference that specific integer, as long as the array has not been modified. This allows you to use an array as a list of items that will always be in the same order, and can always be referenced by their order.</p>
 
-      <p>Exercise 3:<br />
+     <p>Collections</p>
 
-        <strong>Answer the following for the values you chose in Exercise 1:</strong><br />
+     <p>An array is a collection, meaning that a single array is actually a reference in memory to a variety of other objects. An array can be empty, or it can have a huge number of objects in it, including other arrays, but it will still be the same single collection.</p>
 
-        In general, I try to live up to these values:<br />
+     <p>Of Any Object</p>
 
-        Disagree 1 ----- 2 ----- 3 ----- 4 ----- 5 Agree</p> 
+     <p>One thing that makes Ruby different from some other languages is that an array can contain any type of legitimate Ruby object. Even if you create a new object type, an existing array can be used to hold one or more of that object. Arrays can also hold objects of different types, making them very flexible.</p>
 
-        <p>Of course I try to live up to the values I chose, otherwise why choose them? 5 all the way.</p>
+    <p>Zero-Indexed</p>
 
-      <p>Exercise 4:<br />
+    <p>Like many programming languages, Ruby uses a zero index for its arrays. What this means is that the first object in an array is indexed as iten number zero. The second object is item number one. And the address of the final object can be calculated by getting the length of the array, subtracting one, and using that as the index for that object.</p>
 
-        <strong>What was the last topic that someone asked for your advice on?</strong></p> 
+    <p>Creating Arrays</p>
 
-        <p>The last topic that someone asked my advice on was actually tech-related stuff. Crazy how just a few months ago I knew very little, and now my friend is asking me to help re-design her site! I told her that it would take me a lot longer to be able to really help her, but I could change a few things here and there, and I actually discussed the look and feel of the site (she needs something very professional looking). It also really helped explaining some things to her, because articulating tech concepts aloud reinforced how I understood them. Which I guess is the point of these blogs, right? :).</p>
-        <p><a href="lrakhman.github.io/index.html">Back to Home Page</a></p>
+    <p>Ruby makes it very easy to create an array. The syntax for an array is a set of square brackets. At its most basic, and empty array can be created just by assigning an empty set of square brackets to a variable like this: a = []. You can also create an array using the “new” method of the Array class, and passing the number of items that you want the array initialized with. <br /><br />
+
+    a = Array.new<br />
+    a = Array.new(20)<br /><br />
+    
+    Initializing an empty array with a number of items creates the space in memory for as many items as you want the array to hold when it is created, but arrays can grow and shrink as needed.</p>
+
+      <h4>The Hash</h4>
+
+        <p></p>
 
 	</section>
   </body>
