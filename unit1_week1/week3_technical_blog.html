@@ -48,7 +48,45 @@
     <p style="padding-left: 30px; font-size: 18px;"><strong>{THE HASH}</strong></p>
 
         <p>Definition: <em> a Hash is a collection of key-value pairs.</em></p>
-        <p>The key-value pairs look like this: "employee" => "salary" or this "employee_age": 45 (you can use the => notation, or the : notation). It is similar to an Array, except the indexing is done via arbitrary keys or values of any object type, not an integer index. The order in which you traverse, or go through, a hash by either key or value may be arbitrary as well, and will generally not be in the insertion order.</p>
+
+        <p><strong>Order does NOT matter!</strong></p> 
+
+      <p>The first thing to learn about hashes is that they are not ordered. While you can store anything in a hash, you cannot rely on the order in which you stored it. In other words, there is no way to know which element is in a certain position in the hash. The only important information is that each element has a key and a corresponding assigned value. This also means that, unlike an array, the positions are NOT integer-indexed.</p>
+
+      <p><strong>Key/Value-Indexed</strong></p>
+
+      <p>So how do we access a hash? By the key or the value, of course! If your key value pair is workers = {"employee" => "Jon"}, then to get the value of the specific key (which is "employee"), you must access it like so: workers["employee"]. This will return the value assigned to "employee". You can also type in workers["Jon"], and the value will be returned. Mostly, however, keys are used to search for values, and not the other way around.</p>
+
+     <p><strong>Collections</strong></p>
+
+     <p>A hash is also a collection, meaning that a single hash is actually a reference in memory to a variety of other objects. A hash can be empty, or it can have a huge number of objects in it, including other arrays, or hashes, but it will still be the same single collection.</p>
+
+     <p><strong>Collections of Any Object</strong></p>
+
+     <p>Just like for arrays, a hash can contain any type of legitimate Ruby object. Even if you create a new object type, an existing hash can be used to hold one or more of that object. Hashes can also hold objects of different types, making them very flexible.</p>
+
+    <p><strong>Creating Hashes</strong></p>
+
+    <p>Ruby makes it very easy to create a hash. The syntax for an array is a set of curly brackets. At its most basic, and empty hash can be created just by assigning an empty set of curly brackets to a variable like this: a = {}. You can also create an hash using the “new” method of the Hash class.<br /><br />
+
+    a = Hash.new<br /><br />
+    
+    Hashes can grow and shrink as needed.</p>
+        
+    <p>The key-value pairs look like this: "employee" => "salary" or this "employee_age": 45 (you can use the => notation, or the : notation).</p>
+
+    <p style="font-size:16px; color: #fff; ">One last important note about hashes: the keys in a hash can ONLY correspond to their unique values. This means that "employee" cannot have multiple different values like this: <br />
+      <br />
+
+      workers = {"employee": "Jon", "employee": "Jane", "employee": "June"}. <br /><br />
+
+    What this will do is override all the values but the last one, so that the only "employee" that gets stored is "June". In an array, however, this is not the case. An array can have multiple equivalent elements like so: workers = ["Jon", "Jon", "June", "Mary", "June"]. This is because the elements in an array work just like an ordered list, but the elements in a hash work like a dictionary. So think of it like this: a word can only have ONE unique definition, whereas a list can have the same word over and over.</p>
+
+     <p style="padding-left: 30px; font-size: 18px;"><strong>So When Should You Use an Array, and When Should You Use a Hash?</strong></p>
+
+     <p>Use an array when you want to be able to iterate over it and change every element to meet new goals. Use a hash when you need unique keys, or identifiers, to represent unique values. For example, if you are storing data that is not associated with one object, maybe use an array. If you are storing data that revolves around an object, for instance a person that has a name, age, and location, then a hash would be of better service. Simple! </p>
+
+     <p></p>
 
 	</section>
   </body>
