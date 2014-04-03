@@ -7,18 +7,24 @@
   </head>
     <body>
 
-    <h4>What's one of the most useful, important, and common methods in Ruby? Let's MAP out the answer (get it, get it?).</h4>  
+    <h4>What's one of the most useful, important, and common methods in Ruby? Let's MAP out the answer (get it, get it?)!</h4>  
 
     <section>
-      <p>The definiton of Ruby's .map method is as follows: </p>
+      <p>The definiton of Ruby's .map method is as follows (from Ruby Docs): Returns a new array with the results of running block once for every element in enum. If no block is given, an enumerator is returned instead.</p>
 
-      the .each method will iterate through
-# the array/hash and alter each element one at a time, but it will RETURN THE ORIGINAL ARRAY/HASH.
-# Meaning, it will not return the result of what was altered. The .map method, on the other
-# hand, builds a new array of the RESULTS FROM ITERATING OVER EACH ELEMENT. For example,
-# if you have [1, 2, 3].each { |x| x + 1 } it will add 1 to each element and then throw those
-# results away, only to return [1, 2, 3]. But if you do [1, 2, 3].map { |i| i + 1 } the return
-# value is [2, 3, 4]. FUCK YES KNOWLEDGE. 
+      <p>Umm, ok, but what does that really MEAN? Here is a much better explanation, from stackoverflow.com: <br /><br />
+
+        The map method takes an enumerable object and a block, and runs the block for each element, outputting each returned value from the block. It is an non-destructive method. <br /><br /></p>
+
+      <p>Ok, from that explanation we figure out that the .map method builds a new array of the RESULTS FROM ITERATING OVER EACH ELEMENT. Let's look at some examples for clarification. If you have <br /><br />
+
+       my_array = [1, 2, 3]<br />
+       my_array.map { |i| i + 1 } # => [2, 3, 4]<br />
+       puts my_array # => [1, 2, 3]<br /><br /></p>
+
+       <p>Great, so .map will not mutate the original object, but will give you a new object. What about .map! (with the bang)? </p>
+
+
 
 Real example:
 
