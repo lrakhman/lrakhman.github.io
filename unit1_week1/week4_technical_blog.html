@@ -14,7 +14,7 @@
 
       <p>Umm, ok, but what does that really MEAN? Here is a much better explanation, from stackoverflow.com: <br /><br />
 
-        The map method takes an enumerable object and a block, and runs the block for each element, outputting each returned value from the block. It is an non-destructive method. <br /><br /></p>
+        The map method takes an enumerable object and a block, and runs the block for each element, outputting each returned value from the block. It is an non-destructive method. </p>
 
       <p>Ok, from that explanation we figure out that the .map method builds a new array of the RESULTS FROM ITERATING OVER EACH ELEMENT. Let's look at some examples for clarification. If you have <br /><br />
 
@@ -26,14 +26,27 @@
 
        <p>But there's way more, sorry. This method even has it's own Wikipedia article! Check this crazyness out (from Wiki): "The map function originated in functional programming languages but is today supported (or may be defined) in many procedural, object oriented, and multi-paradigm languages as well: In C++'s Standard Template Library, it is called transform, in C# (3.0)'s LINQ library, it is provided as an extension method called Select. Map is also a frequently used operation in high level languages such as Perl, Python and Ruby; the operation is called map in all three of these languages. A collect alias for map is also provided in Ruby.
 
-       If that's not enough for you, here's the link to the entire article:<a href="http://en.wikipedia.org/wiki/Map_%28higher-order_function%29">here</a></p>
+       If that's not enough for you, here's the link to the entire article:<a href="http://en.wikipedia.org/wiki/Map_%28higher-order_function%29">here</a>.</p>
 
        <p>Now let's tackle the next issue: when would someone use the .map method as opposed to other methods that iterate over arrays/hashes, like .each and .select?</p>
 
-       <p>Let's take a look at a real-world example. How would you take a number of any length and insert commas into it to then return a string of that number? For example, if I input 8765432, I need it to output "8,765,432". This is the code that would accomplish this:<br /><br />
-       def separate_commas(num)
+       <p>Let's take a look at a real-world example. How would you take a number of any length and insert commas into it to then return a string of that number? For example, if I input 87654321, I need it to output "87,654,321". This is the code that would accomplish this:<br /><br />
+       def separate_commas(num)<br />
        num.to_s.chars.reverse.each_slice(3).map(&:join).join(",").reverse <br />
-       end <br />
+       end <br /><br />
+
+       So what's going on here? I'm taking my number, converting it to a string, then converting that string into an array (with .chars). Then I'm reversing the array, slicing the array up by 3 spaces each time until there are no more elements left. Fine, but why .map? Because .map loops through each of the newly created subarray and returns the joined subarray, like this: <br /><br />
+
+       87654321.to_s.chars.reverse.each_slice(3) => [["1", "2", "3"], ["4", "5", "6"], ["7", "8"]]. <br /><br />
+
+       See how I have 3 subarrays; 2 of three elements each(["1", "2", "3"] and ["4", "5", "6"]), and one of 2 elements (["7", "8"]). When I call .map(&:join), the following happens and is RETURNED: <br /><br />
+
+       => [["123"], ["456"], ["78"]]<br /><br />
+
+       This is so useful because I don't have to take the extra step of storing it anywhere, I can just continue to use that return value. This is very different from a method like .each, which would do the same loop, except would return the original array, not the joined one. You can start to see why .map is so great; it allows you to take the result and use it to further your goal.  
+
+
+
 
        </p>
 
