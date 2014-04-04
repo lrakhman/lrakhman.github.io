@@ -10,7 +10,7 @@
     <h4>What's one of the most useful, important, and common methods in Ruby? Let's MAP out the answer (get it, get it?)!</h4>  
 
     <section>
-      <p>The definiton of Ruby's .map method is as follows (from Ruby Docs): Returns a new array with the results of running block once for every element in enum. If no block is given, an enumerator is returned instead.</p>
+      <p>The definition of Ruby's .map method is as follows (from Ruby Docs): Returns a new array with the results of running block once for every element in enum. If no block is given, an enumerator is returned instead.</p>
 
       <p>Umm, ok, but what does that really MEAN? Here is a much better explanation, from stackoverflow.com: <br /><br />
 
@@ -24,7 +24,7 @@
 
        Great, so .map will not mutate the original object, but will give you a new object. What about .map! (with the bang)? That one, as you've probably already guessed, will indeed change the original object.</p>
 
-       <p>But there's way more, sorry. This method even has it's own Wikipedia article! Check this crazyness out (from Wiki): "The map function originated in functional programming languages but is today supported (or may be defined) in many procedural, object oriented, and multi-paradigm languages as well: In C++'s Standard Template Library, it is called transform, in C# (3.0)'s LINQ library, it is provided as an extension method called Select. Map is also a frequently used operation in high level languages such as Perl, Python and Ruby; the operation is called map in all three of these languages. A collect alias for map is also provided in Ruby.
+       <p>But there's way more, sorry. This method even has it's own Wikipedia article! Check this craziness out (from Wiki): "The map function originated in functional programming languages but is today supported (or may be defined) in many procedural, object oriented, and multi-paradigm languages as well: In C++'s Standard Template Library, it is called transform, in C# (3.0)'s LINQ library, it is provided as an extension method called Select. Map is also a frequently used operation in high level languages such as Perl, Python and Ruby; the operation is called map in all three of these languages. A collect alias for map is also provided in Ruby.
 
        If that's not enough for you, here's the link to the entire article:<a href="http://en.wikipedia.org/wiki/Map_%28higher-order_function%29">here</a>.</p>
 
@@ -35,19 +35,17 @@
        num.to_s.chars.reverse.each_slice(3).map(&:join).join(",").reverse <br />
        end <br /><br />
 
-       So what's going on here? I'm taking my number, converting it to a string, then converting that string into an array (with .chars). Then I'm reversing the array, slicing the array up by 3 spaces each time until there are no more elements left. Fine, but why .map? Because .map loops through each of the newly created subarray and returns the joined subarray, like this: <br /><br />
+       So what's going on here? I'm taking my number, converting it to a string, then converting that string into an array (with .chars). Then I'm reversing the array, slicing the array up by 3 spaces each time until there are no more elements left. Fine, but why .map? Because .map loops through each of the newly created sub-array and returns the joined sub-array, like this: <br /><br />
 
        87654321.to_s.chars.reverse.each_slice(3) => [["1", "2", "3"], ["4", "5", "6"], ["7", "8"]]. <br /><br />
 
-       See how I have 3 subarrays; 2 of three elements each(["1", "2", "3"] and ["4", "5", "6"]), and one of 2 elements (["7", "8"]). When I call .map(&:join), the following happens and is RETURNED: <br /><br />
+       Now I have 3 sub-arrays; 2 of three elements each(["1", "2", "3"] and ["4", "5", "6"]), and one of 2 elements (["7", "8"]). When I call .map(&:join), the following happens and is RETURNED: <br /><br />
 
        => [["123"], ["456"], ["78"]]<br /><br />
 
        This is so useful because I don't have to take the extra step of storing it anywhere, I can just continue to use that return value. This is very different from a method like .each, which would do the same loop, except would return the original array, not the joined one. You can start to see why .map is so great; it allows you to take the result and use it to further your goal.  
 
-
-
-
+       Lastly, .map and .map! are really part of the Enumerable module that is mixed in (or a mixin) of the Array class and the Hash class. This means that when ever you need to traverse a collection of some kind, change each value of the collection into something, and return that value in a new collection, .map is a good way to do it!
        </p>
 
 
