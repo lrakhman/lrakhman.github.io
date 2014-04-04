@@ -20,19 +20,24 @@
 
        my_array = [1, 2, 3]<br />
        my_array.map { |i| i + 1 } # => [2, 3, 4]<br />
-       puts my_array # => [1, 2, 3]<br /><br /></p>
+       puts my_array # => [1, 2, 3]<br /><br />
 
-       <p>Great, so .map will not mutate the original object, but will give you a new object. What about .map! (with the bang)? </p>
+       Great, so .map will not mutate the original object, but will give you a new object. What about .map! (with the bang)? That one, as you've probably already guessed, will indeed change the original object.</p>
+
+       <p>But there's way more, sorry. This method even has it's own Wikipedia article! Check this crazyness out (from Wiki): "The map function originated in functional programming languages but is today supported (or may be defined) in many procedural, object oriented, and multi-paradigm languages as well: In C++'s Standard Template Library, it is called transform, in C# (3.0)'s LINQ library, it is provided as an extension method called Select. Map is also a frequently used operation in high level languages such as Perl, Python and Ruby; the operation is called map in all three of these languages. A collect alias for map is also provided in Ruby.
+
+       If that's not enough for you, here's the link to the entire article:<a href="http://en.wikipedia.org/wiki/Map_%28higher-order_function%29">here</a></p>
+
+       <p>Now let's tackle the next issue: when would someone use the .map method as opposed to other methods that iterate over arrays/hashes, like .each and .select?</p>
+
+       <p>Let's take a look at a real-world example. How would you take a number of any length and insert commas into it to then return a string of that number? For example, if I input 8765432, I need it to output "8,765,432". This is the code that would accomplish this:<br /><br />
+       def separate_commas(num)
+       num.to_s.chars.reverse.each_slice(3).map(&:join).join(",").reverse <br />
+       end <br />
+
+       </p>
 
 
-
-Real example:
-
-def separate_comma(num)
-  num_array = num.to_s.chars.reverse
-  final_num = num_array.each_slice(3).map {|x| x.join }
-  final_num.join(",").reverse
-end
 
   <p style="text-align:center;"><a href="../index.html">Take Me Back (Home)</a><p>
 
