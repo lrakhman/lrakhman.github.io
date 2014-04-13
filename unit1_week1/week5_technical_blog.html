@@ -8,14 +8,50 @@
       <h4>Let's building a new Ruby(with a bit of Rails) app with classes!</h4>
 
 	  <section>
-      <p>I love traveling, but I HATE being a tourist. I always wish that I knew some locals that could show me around, or tell me the cool places to go see, or just guide me toward things locals like to do. I prefer to experience places for what they are, instead of hitting up all the usual tourist traps. From this frustration, my little child was born: I call her <em>Lokalizr</em>.</p>
+      <p>I love traveling, but I HATE being a tourist. I always wish that I knew some locals that could show me around, or tell me the cool places to go see, or just guide me toward things locals like to do. I prefer to experience places for what they are, instead of hitting up all the usual tourist traps. From this frustration, my little baby was born: I call her <em>Lokalizr</em>.</p>
 
-      
+      <p>Lokalizr is supposed to be an app that bridges the gap between travel and comfort. I don't speak Japanese, but I want to go to Japan! I don't know anyone in Japan :(. You know what would be cool? A local guide! That spoke some English! He/she could sit down with me and explain some things, maybe show me around, maybe we'd have lunch, etc. I would be the tourist, but I'd be touring the guide's city through the eyes of a local. Or even better, I want to move to Japan! Oh hell, I can search online forever for tips, but wouldn't it be nice talking to someone that could answer my personal questions? Maybe talking to a few people? </p>
+
+      <p>That's the basic idea of the app. So how do we build this thing? The first thing we should do is talk about objects and classes.</p>
+
+      <h5>What is an object?</h5>
+
+        <blockquote>"An object is an entity that serves as a container for data and also controls access to the data. Associated with an object is a set of attributes, which are essentially no more than variables belonging to that object. Also associated with an object is a set of functions that provide an interface to the functionality of the object, called methods." - Hal Fulton</blockquote>
+
+
+        <p>Remember how almost everything in Ruby is an object? Think of an object as a jar (or container, as mentioned above). The jar stores a bunch of things inside it, and we can do certain things with the jar as well. So in our app, we'd need to build some objects that would store data, and that we can manipulate. What would those objects be? Classes, of course!</p>
+
+        <h5>What is a class?</h5>
+
+        <blockquote>"A class is just a way of organizing and producing objects with similar attributes and methods." - codeacademy.com</blockquote>
+
+        <p>What does this mean, though? It means that a class is an object, and that you can have instances of that class (which are also objects). For example: 
+
+          class Dog<br />
+          end <br />
+
+          fido = Dog.new("golden retriever")<br />
+          jumpy = Dog.new("beagle")<br />
+          fluffy = Dog.new("yorkshire terrier")</p>
+
+        <p>Dog would be the entire class, and fido, jumpy, and fluffy would be INSTANCES of that class, but they are all objects.</p>
+
+        <p>This leads up into discussing variables, because we need to understand how to use these new classes and objects we're going to creat. </p>
+        
+<blockquote>"Ruby provides four types of variables:
+
+Local Variables: Local variables are the variables that are defined in a method. Local variables are not available outside the method. You will see more details about method in subsequent chapter. Local variables begin with a lowercase letter or _. <br /><br />
+
+Instance Variables: Instance variables are available across methods for any particular instance or object. That means that instance variables change from object to object. Instance variables are preceded by the at sign (@) followed by the variable name.<br /><br />
+
+Class Variables: Class variables are available across different objects. A class variable belongs to the class and is a characteristic of a class. They are preceded by the sign @@ and are followed by the variable name.<br /><br />
+
+Global Variables: Class variables are not available across classes. If you want to have a single variable, which is available across classes, you need to define a global variable. The global variables are always preceded by the dollar sign ($)." - tutorialspoint.com </blockquote>
+
   		<p>Things an object knows about itself are called instance variables. They represent an object's state (the data - for example, the quantity and the product id), and can have unique values for each object of that type.
 
 Things an object can do are called methods.</p> 
 
-    <blockquote>An object is an entity that serves as a container for data and also controls access to the data. Associated with an object is a set of attributes, which are essentially no more than variables belonging to that object. Also associated with an object is a set of functions that provide an interface to the functionality of the object, called methods. - Hal Fulton</blockquote>
 
     <img src="http://rubylearning.com/images/rubyclass.jpg">
 
@@ -34,6 +70,9 @@ Ruby offers an interesting and powerful compromise, giving you the simplicity of
 
 
 Sometimes a class needs to provide methods that work without being tied to any particular object.
+
+
+
    
 
 	</section>
