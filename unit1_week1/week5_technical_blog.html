@@ -5,7 +5,7 @@
   </head>
     <body>
 
-      <h4>Let's building a new Ruby(with a bit of Rails) app with classes!</h4>
+      <h4>Let's build a new Ruby app with classes!</h4>
 
 	  <section>
       <p>I love traveling, but I HATE being a tourist. I always wish that I knew some locals that could show me around, or tell me the cool places to go see, or just guide me toward things locals like to do. I prefer to experience places for what they are, instead of hitting up all the usual tourist traps. From this frustration, my little baby was born: I call her <em>Lokalizr</em>.</p>
@@ -28,7 +28,7 @@
         <p>What does this mean, though? It means that a class is an object, and that you can have instances of that class (which are also objects). For example: <br /><br />
 
           class Dog<br />
-          end <br />
+          end <br /><br />
 
           fido = Dog.new("golden retriever")<br />
           jumpy = Dog.new("beagle")<br />
@@ -48,32 +48,24 @@ Class Variables: Class variables are available across different objects. A class
 
 Global Variables: Class variables are not available across classes. If you want to have a single variable, which is available across classes, you need to define a global variable. The global variables are always preceded by the dollar sign ($)." - tutorialspoint.com </blockquote>
 
-  		<p>Things an object knows about itself are called instance variables. They represent an object's state (the data - for example, the quantity and the product id), and can have unique values for each object of that type.
 
-Things an object can do are called methods.</p> 
+<p>Things an object knows about itself are called instance variables. They represent an object's state (the data - for example, the quantity and the product id), and can have unique values for each object of that type. That's why the above explanation of the 4 different types of variables is important. </p>
 
+<p>The next important element to understand are methods, which are things an object can do. There are class methods and there are instance methods. Sometimes a class needs to provide methods that work without being tied to any particular object, and that's why class methods come in handy. Things like deleting and even creating are class-level methods, because they need to work on every instance of that class. Instance methods are called on particular instances of a class, like called fido.bark. If you want ALL your dogs to bark, then build it like this: self.bark. If you want only some dogs to bark, and the rest to sit quietly, then make define your method like so: bark. The "self" keyword means it will work on every single object that you create from that class, which is not always desired.</p> 
 
-    <img src="http://rubylearning.com/images/rubyclass.jpg">
+<p>Now let's talk inheritance (not money, sorry). </p>
 
-    class KaraokeSong < Song
-  def initialize(name, artist, duration, lyrics)
-    super(name, artist, duration)
-    @lyrics = lyrics
-  end
-end
-
-Some object-oriented languages (notably C++) support multiple inheritance, where a class can have more than one immediate parent, inheriting functionality from each. Although powerful, this technique can be dangerous, as the inheritance hierarchy can become ambiguous.
+<blockquote>"Some object-oriented languages (notably C++) support multiple inheritance, where a class can have more than one immediate parent, inheriting functionality from each. Although powerful, this technique can be dangerous, as the inheritance hierarchy can become ambiguous.
 
 Other languages, such as Java, support single inheritance. Here, a class can have only one immediate parent. Although cleaner (and easier to implement), single inheritance also has drawbacks—in the real world things often inherit attributes from multiple sources (a ball is both a bouncing thing and a spherical thing, for example).
 
-Ruby offers an interesting and powerful compromise, giving you the simplicity of single inheritance and the power of multiple inheritance. A Ruby class can have only one direct parent, and so Ruby is a single-inheritance language. However, Ruby classes can include the functionality of any number of mixins (a mixin is like a partial class definition). This provides a controlled multiple-inheritance-like capability with none of the drawbacks. We'll explore mixins more in the section “Mixins” in the chapter on modules.
+Ruby offers an interesting and powerful compromise, giving you the simplicity of single inheritance and the power of multiple inheritance. A Ruby class can have only one direct parent, and so Ruby is a single-inheritance language. However, Ruby classes can include the functionality of any number of mixins (a mixin is like a partial class definition). This provides a controlled multiple-inheritance-like capability with none of the drawbacks. We'll explore mixins more in the section “Mixins” in the chapter on modules." - phrogz.net</blockquote>
+
+<p>Check out this craziness:<br /><br /></p>
+    <img src="http://rubylearning.com/images/rubyclass.jpg">
 
 
-Sometimes a class needs to provide methods that work without being tied to any particular object.
 
-
-
-   
 
 	</section>
   </body>
