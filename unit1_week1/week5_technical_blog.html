@@ -1,29 +1,40 @@
 <!Doctype html>
 <html>
-  <head><h2>Title</h2>
+  <head><h2>Ruby is so Classy!</h2>
   <link rel="stylesheet" type="text/css" href="/unit1_week1/stylesheets/stylesheet_for_blog.css">
   </head>
     <body>
 
-      <h4>Summary Points
-	    <ol>
-		  <li><a href="http://www.theatlantic.com">Point 1</a>
-		  </li> 
-		  <li><a href="http://thinkprogress.org/">Point 2</a>
-		  </li>  
-		  <li><a href="http://www.buzzfeed.com/">Point 3</a>
-		  </li>
-	   </ol>
-      </h4>
+      <h4>Let's building a new Ruby(with a bit of Rails) app with classes!</h4>
 
 	  <section>
-  		<p>Blah blah blah.</p> 
+      <p>I love traveling, but I HATE being a tourist. I always wish that I knew some locals that could show me around, or tell me the cool places to go see, or just guide me toward things locals like to do. I prefer to experience places for what they are, instead of hitting up all the usual tourist traps. From this frustration, my little child was born: I call her <em>Lokalizr</em>.</p>
 
-      <p>Blah blah blah.</p> 
+      
+  		<p>Things an object knows about itself are called instance variables. They represent an object's state (the data - for example, the quantity and the product id), and can have unique values for each object of that type.
 
-      <p>Blah blah blah.</p> 
+Things an object can do are called methods.</p> 
 
-      <p>Blah blah blah.</p> 
+    <blockquote>An object is an entity that serves as a container for data and also controls access to the data. Associated with an object is a set of attributes, which are essentially no more than variables belonging to that object. Also associated with an object is a set of functions that provide an interface to the functionality of the object, called methods. - Hal Fulton</blockquote>
+
+    <img src="http://rubylearning.com/images/rubyclass.jpg">
+
+    class KaraokeSong < Song
+  def initialize(name, artist, duration, lyrics)
+    super(name, artist, duration)
+    @lyrics = lyrics
+  end
+end
+
+Some object-oriented languages (notably C++) support multiple inheritance, where a class can have more than one immediate parent, inheriting functionality from each. Although powerful, this technique can be dangerous, as the inheritance hierarchy can become ambiguous.
+
+Other languages, such as Java, support single inheritance. Here, a class can have only one immediate parent. Although cleaner (and easier to implement), single inheritance also has drawbacks—in the real world things often inherit attributes from multiple sources (a ball is both a bouncing thing and a spherical thing, for example).
+
+Ruby offers an interesting and powerful compromise, giving you the simplicity of single inheritance and the power of multiple inheritance. A Ruby class can have only one direct parent, and so Ruby is a single-inheritance language. However, Ruby classes can include the functionality of any number of mixins (a mixin is like a partial class definition). This provides a controlled multiple-inheritance-like capability with none of the drawbacks. We'll explore mixins more in the section “Mixins” in the chapter on modules.
+
+
+Sometimes a class needs to provide methods that work without being tied to any particular object.
+   
 
 	</section>
   </body>
