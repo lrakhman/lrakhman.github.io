@@ -67,7 +67,7 @@ Ruby offers an interesting and powerful compromise, giving you the simplicity of
 
 <p>Let's relate this all back to my app. If I had a class named "User", I could have sub-classes that inherited certain attributes from "User". Here is an example of something I built, that is only really half-ready (also, it uses some Rails methods solely for semantic purposes, so please ignore):</p>
 
-<code style="background-color: #C4B7B7; padding: 5%;">
+<xmp style="background-color: #C4B7B7; padding: 5%;">
 #Lokalizr
 
 
@@ -164,7 +164,7 @@ class New_Resident < User
   end
 end
 
-</code>
+</xmp>
  
 
  <p>As you can see, I've structured it so that the sub-classes "Tourist", "Guide", and "New Resident" inherit from "User", because they are all a type of user. There are also two different kinds of methods that we talked about above: instance methods and class methods. It makes sense that you'll want to delete any instance of a class without restraint (like deleting your user profile or a tweet), but that something like giving and getting a user rating are tied to individual instances of a class (I might have a higher rating than you do, or vice versa). </p>
@@ -175,12 +175,17 @@ end
 
  <p>Private, on the other hand, are meant to limit access. In the above example, I DO NOT want people messing with the ratings that others give them, otherwise we'd all have the best reviews. Here is a another way of thinking about public vs. private methods:</p>
 
- <blockquote>Private methods are just that: they're private to the object where they are
+ <blockquote>"Private methods are just that: they're private to the object where they are
 defined. This means you can only call these methods from other code inside
-the object. Another way to say this is that the method cannot be called with an explicit receiver. Explicit receivers are the objects on which methods are called! Whenever you call object.method, object is the receiver of the method. In order to access private information, we have to create public methods that know how to get it. This separates the private implementation from the public interface. - codeacademy.coom</blockquote>
+the object. Another way to say this is that the method cannot be called with an explicit receiver. Explicit receivers are the objects on which methods are called! Whenever you call object.method, object is the receiver of the method. In order to access private information, we have to create public methods that know how to get it. This separates the private implementation from the public interface." - codeacademy.coom</blockquote>
+
+<p>That's all for now! If you want to read just a bit more, here's a link to some other very useful info about classes: <a href="http://phrogz.net/programmingruby/tut_classes.html">MORE INFO</a> and here's another one that outlines some Ruby no-nos when it comes to building classes (really great info about what NOT to do with mixins, inheritance, and variables): <a href="http://www.oreillynet.com/pub/a/ruby/excerpts/ruby-best-practices/worst-practices.html"></a>O'Reilly Ruby Best Practices.</p>
+
+<h4>HAPPY CODING!</h4>
 
 
 
+<p style="text-align:center;"><a href="../index.html">Take Me Back (Home)</a><p>
 
 
 
