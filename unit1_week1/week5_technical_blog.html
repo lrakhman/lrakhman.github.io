@@ -49,9 +49,9 @@ Class Variables: Class variables are available across different objects. A class
 Global Variables: Class variables are not available across classes. If you want to have a single variable, which is available across classes, you need to define a global variable. The global variables are always preceded by the dollar sign ($)." - tutorialspoint.com </blockquote>
 
 
-<p>Things an object knows about itself are called instance variables. They represent an object's state (the data - for example, the quantity and the product id), and can have unique values for each object of that type. That's why the above explanation of the 4 different types of variables is important. </p>
+<p>Things an object knows about itself are the instance variables. They represent an object's state (the data - for example, the quantity and the product id), and can have unique values for each object of that type. Class variables, however, are not unique to each particular object; they are a constant in every object. Be careful when creating global variables: most of the time they're very discouraged. That's why the above explanation of the 4 different types of variables is important. </p>
 
-<p>The next important element to understand are methods, which are things an object can do. There are class methods and there are instance methods. Sometimes a class needs to provide methods that work without being tied to any particular object, and that's why class methods come in handy. Things like deleting and even creating are class-level methods, because they need to work on every instance of that class. Instance methods are called on particular instances of a class, like called fido.bark. If you want ALL your dogs to bark, then build it like this: self.bark. If you want only some dogs to bark, and the rest to sit quietly, then make define your method like so: bark. The "self" keyword means it will work on every single object that you create from that class, which is not always desired.</p> 
+<p>The next important element to understand are methods, which are things an object can do. There are class methods and there are instance methods. Sometimes a class needs to provide methods that work without being tied to any particular object, and that's why class methods come in handy. Things like deleting and even creating are class-level methods, because they need to work on every instance of that class. Instance methods are called on particular instances of a class, like called fido.bark. If you want ALL your dogs to bark, then build it like this: self.bark. If you want only some dogs to bark, and the rest to sit quietly, then define your method like so: bark. The "self" keyword means it will work on every single object that you create from that class, which is not always desired.</p> 
 
 <p>Now let's talk inheritance (not money, sorry). </p>
 
@@ -72,6 +72,7 @@ Ruby offers an interesting and powerful compromise, giving you the simplicity of
 
 
 class User
+
   def initialize(name, age, state, city, email)
     @name = name
     @age = age
@@ -104,12 +105,13 @@ def login(username,password)
     end
   end
   
-  def profile(gender, picture, survey, about_me)
-     #code that redirects to upload picture, fill out bio, and answer survey
-  end
+def profile(gender, picture, survey, about_me)
+  #code that redirects to upload picture, fill out bio, and answer survey
+end
 
 
 class Guide < User
+
   def initialize(rating)
     super (name, age, state, city, email)
     @rating = rating
@@ -128,6 +130,7 @@ class Guide < User
 end
 
 class Tourist < User
+
   def initialize(rating)
      super (name, age, state, city, email)
      @rating = rating
@@ -147,6 +150,7 @@ class Tourist < User
 end
 
 class New_Resident < User
+
   def initialize(rating)
     super (name, age, state, city, email)
     @rating = rating
@@ -169,17 +173,17 @@ end
 
  <p>As you can see, I've structured it so that the sub-classes "Tourist", "Guide", and "New Resident" inherit from "User", because they are all a type of user. There are also two different kinds of methods that we talked about above: instance methods and class methods. It makes sense that you'll want to delete any instance of a class without restraint (like deleting your user profile or a tweet), but that something like giving and getting a user rating are tied to individual instances of a class (I might have a higher rating than you do, or vice versa). </p>
 
- <p>Lastly, the keyword "private" that I used above deserves some attention, as does the keywords attr_accessor. </p>
+ <p>Lastly, the keyword "private" that I used above deserves some attention, as does the keyword attr_accessor. </p>
 
  <p>Sometimes you need to access certain attributes. In my Lokalizr app, I want the user to be able to change their name, age, state, city, and email address. It would be illogical to never let my users update their info. In order to access their info, that is, to be able to read it and overwrite it, I need the attribute accessor keyword, or attr_accessor for short. Instead of writing out methods for each attribute, it only takes one line of code!</p>
 
- <p>Private, on the other hand, are meant to limit access. In the above example, I DO NOT want people messing with the ratings that others give them, otherwise we'd all have the best reviews. Here is a another way of thinking about public vs. private methods:</p>
+ <p>Private, on the other hand, is meant to limit access. In the above example, I DO NOT want people messing with the ratings that others give them, otherwise we'd all have the best reviews. Here is a another way of thinking about public vs. private methods:</p>
 
  <blockquote>"Private methods are just that: they're private to the object where they are
 defined. This means you can only call these methods from other code inside
 the object. Another way to say this is that the method cannot be called with an explicit receiver. Explicit receivers are the objects on which methods are called! Whenever you call object.method, object is the receiver of the method. In order to access private information, we have to create public methods that know how to get it. This separates the private implementation from the public interface." - codeacademy.com</blockquote>
 
-<p>That's all for now! If you want to read just a bit more, here's a link to some other very useful info about classes: <a href="http://phrogz.net/programmingruby/tut_classes.html">MORE INFO</a> and here's another one that outlines some Ruby no-nos when it comes to building classes (really great info about what NOT to do with mixins, inheritance, and variables): <a href="http://www.oreillynet.com/pub/a/ruby/excerpts/ruby-best-practices/worst-practices.html">O'Reilly Ruby Best Practices.</a></p>
+<p>That's all for now! If you want to read just a bit more, here's a link to some other very useful info about classes: <a href="http://phrogz.net/programmingruby/tut_classes.html">MORE INFO</a>. And here's another one that outlines some Ruby no-nos when it comes to building classes (really great info about what NOT to do with mixins, inheritance, and variables): <a href="http://www.oreillynet.com/pub/a/ruby/excerpts/ruby-best-practices/worst-practices.html">O'Reilly Ruby Best Practices.</a></p>
 
 <h4 style="text-align: center;">HAPPY CODING!</h4>
 
