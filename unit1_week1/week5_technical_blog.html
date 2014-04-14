@@ -65,7 +65,7 @@ Ruby offers an interesting and powerful compromise, giving you the simplicity of
 
 <img src="http://rubylearning.com/images/rubyclass.jpg">
 
-<p>Let's relate this all back to my app. If I had a class named "User", I could have sub-classes that inherited certain attributes from "User". Here is an example of something I built, that is only really half-ready (also, it uses some Rails stuff, so please ignore):</p>
+<p>Let's relate this all back to my app. If I had a class named "User", I could have sub-classes that inherited certain attributes from "User". Here is an example of something I built, that is only really half-ready (also, it uses some Rails methods solely for semantic purposes, so please ignore):</p>
 
 <xmp style="background-color: #C4B7B7; padding: 5%;">
 #Lokalizr
@@ -165,7 +165,11 @@ class New_Resident < User
 end
 
 </xmp>
+ 
 
+ <p>As you can see, I've structured it so that the sub-classes "Tourist", "Guide", and "New Resident" inherit from "User", because they are all a type of user. There are also two different kinds of methods that we talked about above: instance methods and class methods. It makes sense that you'll want to delete any instance of a class without restraint (like deleting your user profile or a tweet), but that something like giving and getting a user rating are tied to individual instances of a class (I might have a higher rating than you do, or vice versa). </p>
+
+ <p>Lastly, the keyword "private" that I used above deserves some attention, as does the keywords attr_accessor. </p>
 
 
 
