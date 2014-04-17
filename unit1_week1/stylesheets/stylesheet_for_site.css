@@ -106,13 +106,16 @@ img {
 #more{
   background-color: #545454;
 }
-
-#blogs, #blogs li a{
+#blogs {
   background-color: #D0ECC6;
-  color: #fff;
-  text-shadow: black 0.1em 0.1em 0.2em;
-  font-size: 100%;
   padding: 2%;
+}
+#blogs li a{
+  color: #464252;
+  text-shadow: none;
+  font-size: 100%;
+  line-height: 140%;
+
 }
 
 #footer, #footer p{
