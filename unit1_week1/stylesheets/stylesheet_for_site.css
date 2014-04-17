@@ -66,8 +66,14 @@ p {
 
 }
 
-.facts 
+h2 {
+  font-size: 150%;
+}
+
+.facts {
   background-color: #E8E8E8;
+  font-size: 120%;
+  text-align: center;
 }
 
 
