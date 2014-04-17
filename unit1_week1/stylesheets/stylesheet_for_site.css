@@ -52,7 +52,7 @@ p {
   font-weight: strong;
   font-family: Garamond;
   text-align: justify;
-  color: #7E0774;
+  color: #5F5C5F;
   font-size: 60%;
   margin: 0;
 
@@ -110,6 +110,10 @@ img {
   color: #fff;
   margin: -32px;
   padding: 3%;
+}
+
+#city p, #city li{
+  padding: 2%;
 }
 
 
