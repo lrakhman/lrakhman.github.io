@@ -113,12 +113,15 @@ img {
 }
 
 #city p{
-  padding: 2%;
+  padding-top: 5%;
 }
 
 #city ul{
-  font-size: 70%;
+  font-size: 50%;
   list-style-type: square;
+  text-shadow: none;
+  color: rgb(19, 11, 61);
+  line-height: 30px;
 }
 
 
