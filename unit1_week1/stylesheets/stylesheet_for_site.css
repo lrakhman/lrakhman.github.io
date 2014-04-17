@@ -110,7 +110,7 @@ img {
   background-color: #D0ECC6;
 }
 
-#footer{
+#footer, #footer p{
   color: #fff;
   text-align: center;
   background-color: #999EA0;
