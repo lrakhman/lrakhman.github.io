@@ -98,11 +98,17 @@ img {
   width: 30%;
 }
 
+
 #city {
   background-color: #7DB5D4;
   padding: 3%;
 
 }
+
+#city h2 {
+  background-color: #545454;
+}
+
 
 #more{
   background-color: #545454;
