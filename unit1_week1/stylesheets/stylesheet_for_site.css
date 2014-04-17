@@ -105,6 +105,10 @@ img {
 #more{
   background-color: #545454;
 }
+
+#footer{
+  background-color: #D0ECC6;
+}
 /* Fonts */
 @font-face {
   font-family: 'EntypoRegular';
