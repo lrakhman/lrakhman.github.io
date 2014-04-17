@@ -47,12 +47,12 @@ header {
 }
 
 p {
-  padding: 10% 5%;
+  padding: 3%;
   font-weight: strong;
   font-family: Garamond;
-  text-align: center;
+  text-align: justify;
   color: #e5e5ff;
-  font-size: 100%;
+  font-size: 60%;
   margin: 0;
 
 }
