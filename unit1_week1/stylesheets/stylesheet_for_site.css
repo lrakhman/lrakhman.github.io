@@ -73,11 +73,13 @@ h2 {
 
 .facts {
   background-color: #E8E8E8;
-  font-size: 120%;
   text-align: center;
 }
 
-
+h3 {
+  font-size: 115%;
+  padding: 1%;
+}
 
 /* Fonts */
 @font-face {
