@@ -103,9 +103,13 @@ img {
   background-color: #545454;
   padding: 3%;
 }
+
+#more h2{
+  font-size: 130%;
+}
  
 #more a{
-  font-size: 80%
+  font-size: 100%
 }
 
 #more a:hover{
