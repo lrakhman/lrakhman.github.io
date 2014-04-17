@@ -96,6 +96,11 @@ h4{
 img {
   width: 30%;
 }
+
+#city {
+  background-color: #7DB5D4;
+  
+}
 /* Fonts */
 @font-face {
   font-family: 'EntypoRegular';
