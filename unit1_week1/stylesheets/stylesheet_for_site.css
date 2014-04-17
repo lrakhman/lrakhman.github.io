@@ -112,11 +112,12 @@ img {
 
 #footer, #footer p{
   color: #fff;
-  font-size: 60%;
+  font-size: 120%;
   font-weight: strong;
   text-shadow: black 0.1em 0.1em 0.2em;
   text-align: center;
   background-color: #999EA0;
+  padding: 3%;
 }
 /* Fonts */
 @font-face {
