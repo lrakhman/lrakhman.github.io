@@ -99,7 +99,11 @@ img {
 
 #city {
   background-color: #7DB5D4;
-  
+
+}
+
+#more{
+  background-color: #545454;
 }
 /* Fonts */
 @font-face {
