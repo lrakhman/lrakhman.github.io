@@ -69,7 +69,7 @@ p {
 }
 
 h2 {
-  font-size: 130%;
+  font-size: 100%;
   padding: 3%;
   text-align: center;
 }
@@ -104,7 +104,7 @@ img {
   padding: 3%;
 }
  
-#more li {
+#more ul {
   font-size: 100%
 }
 
@@ -118,6 +118,10 @@ img {
   font-size: 100%;
   line-height: 140%;
 
+}
+
+#blogs h2{
+  font-size: 100%;
 }
 
 #footer, #footer p{
