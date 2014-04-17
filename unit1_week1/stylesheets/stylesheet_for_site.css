@@ -1,230 +1,69 @@
 /* General Styles */
+
 body {
-  background-color: rgb(241, 241, 241);
+  background-color: gray;
   font-family: 'Lato', Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.2em;
-  margin: 0px auto;
-  min-width: 960px;
-  width: 100%;
+  font-size: 25px;
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  margin: 0;
   padding: 0;
 }
 
-p {
-  margin: 1em;
-  font-family: Palatino;
+#header li {
+  display: inline;
 }
 
 a {
-  color: #1D766F;
-  text-decoration: none;
-}
-a:hover {
-  color: #BC2F36;
-  text-decoration: underline;
+  font-family: cursive;
+  font-weight: strong;
+  font-size: 150%;
+  text-shadow: black 0.1em 0.1em 0.2em
 }
 
-h1 {
-  font-family: 'Lato', cursive;
-  font-size: 3em;
-  float: left;
-  line-height: 75px;
+#header a:visited {
+  color: #D685BA;
 }
 
-h2 {
-  background-color: #3C3C3C;
-  color: #FFF;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 2.4em;
-  font-weight: 400;
-  line-height: 80px;
-  margin: 0 0 0.5em 0;
-  text-align: center;
-}
-
-h3 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.4em;
-  font-weight: 700;
-  margin: 0 0 0.3em 0;
-  text-align: center;
-}
-
-h4 {
-  color: rgb(120, 120, 120);
-  font-size: 1em;
-  text-align: center;
-}
-
-
-/* Navigation */
-nav li {
-  float: left;
-}
-nav li a {
+#header a:hover {
   color: #fff;
-  margin: 0 10px;
-  padding: 5px 10px;
   text-decoration: none;
 }
-nav li a:hover {
-  color: #FB000D;
+
+#header {
+  text-align: center;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  padding: 10% 5%;
+  margin: 0;
+  background-color: #7DB5D4;
 }
 
-/* Header */
-header {
-  background-color: #255F6F;
-  padding: 30px;
+p {
+  padding: 10% 5%;
+  font-weight: strong;
+  font-family: Garamond;
+  text-align: center;
+  color: #e5e5ff;
+  font-size: 150%;
+  background-color: #545454;
+  margin: 0;
+
 }
-header h1 {
-  color: #FFEECC;
-  background: no-repeat 0 50%;
-  padding-left: 40px;
+h3 {
+  font-size: 150px;
 }
-header nav {
-  float: right;
-  font-size: 1.2em;
-  margin-left: 20px;
-}
-header nav li {
-  line-height: 75px;
-}
-header nav a:hover {
-  background-color: #fff;
+ul li {
+  padding-left: 5%;
 }
 
-header:after {
-  /* clearfix hack */
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-/* Main */
-
-#main ul li {
-    list-style-type: square;
-}
-#main section {
-  margin-bottom: 1em;
-  position: relative;
-}
-#main div.wrapper{
-    width: 100%;
-    max-width:1400px;
-    margin: 0 auto;
+li, h2, h3 {
+  text-align: center;
+  list-style-type: none;
 }
 
 
-#main section:after {
-  /* clearfix hack */
-  content: "";
-  display: table;
-  clear: both;
-}
 
 
-/* Facts about me */
-#fun article.facts {
-  background-color: white;
-  float: left;
-  min-height: 250px;
-  margin: 2%;
-  padding: 1%;
-  width: 27.33%;
-}
-
-#fun article.break {
-  clear: both;
-}
-
-#fun article img {
-  display: block;
-  margin: 1em auto;
-  width: 100%;
-}
-
-
-/* City facts */
-#city {
-  clear: both;
-  height: 500px;
-}
-
-#city ul {
-  margin: 30px;
-  position: relative;
-}
-#city ul li {
-  font-size: 1em;
-  line-height: 1em;
-  margin-bottom: 1em;
-  padding-left: 5px;
-  max-width: 50%;
-}
-
-
-#city li:hover img {
-  display: block;
-}
-
-
-/* More Stuff */
-#more ul {
-  margin: 50px;
-}
-#more ul li {
-  font-size: 1.2em;
-  line-height: 1em;
-  margin-bottom: 1em;
-  padding-left: 5px;
-  list-style: none;
-}
-#more ul li:before {
-  color: #FFA700;
-  font-family: 'EntypoRegular';
-  font-size: 30px;
-  padding-right: 10px;
-}
-#more ul li:hover:before {
-  color: #FF6F00;
-}
-
-
-/* Footer */
-footer {
-  background-color: #255F6F;
-}
-
-footer .nav {
-  float: left;
-  font-size: 1.3em;
-  margin: 10px;
-}
-
-footer nav a:hover {
-  color: #FFEECC;
-}
-footer p{
-    color: #e5e5e5;
-    font-size: 1.2em;
-    padding: 1.5%;
-    text-align: center;
-}
-
-footer a{
-    color:#000;
-    font-family: Garamond;
-}
-
-footer:after {
-  /* clearfix hack */
-  content: "";
-  display: table;
-  clear: both;
-}
 
 
 /* Fonts */
