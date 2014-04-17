@@ -104,8 +104,8 @@ img {
   padding: 3%;
 }
  
-#more ul {
-  font-size: 100%
+#more ul li{
+  font-size: 80%
 }
 
 #blogs {
@@ -121,7 +121,7 @@ img {
 }
 
 #blogs h2{
-  font-size: 100%;
+  font-size: 150%;
 }
 
 #footer, #footer p{
