@@ -99,35 +99,13 @@ img {
 }
 
 
-#city {
-  background-color: #7DB5D4;
-  padding: 3%;
-
-}
-
-#city h2 {
-  background-color: #545454;
-  color: #fff;
-  margin: -32px;
-  padding: 3%;
-}
-
-#city p{
-  padding-top: 5%;
-}
-
-#city ul{
-  font-size: 50%;
-  list-style-type: square;
-  text-shadow: none;
-  color: rgb(19, 11, 61);
-  line-height: 30px;
-}
-
-
 #more{
   background-color: #545454;
   padding: 3%;
+}
+ 
+#more li {
+  font-size: 100%
 }
 
 #blogs {
