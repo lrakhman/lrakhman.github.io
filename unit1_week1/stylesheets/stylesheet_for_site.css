@@ -85,6 +85,13 @@ h3 {
   text-shadow: none;
 }
 
+h4{
+  padding-bottom: 2%;
+  color: rgb(57, 147, 160);
+  text-shadow: none;
+  font-size: 80%;
+}
+
 /* Fonts */
 @font-face {
   font-family: 'EntypoRegular';
