@@ -111,7 +111,8 @@ img {
 }
 
 #footer{
-  background-color: #545454;
+  color: #fff;
+  background-color: #999EA0;
 }
 /* Fonts */
 @font-face {
