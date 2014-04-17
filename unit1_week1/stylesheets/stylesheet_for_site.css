@@ -63,10 +63,14 @@ p {
   background-color: #545454;
 }
 
-.facts {
+.facts 
   background-color: #E8E8E8;
 }
 
+h2 {
+  font-size: 150%;
+  text-align: center;
+}
 
 
 
