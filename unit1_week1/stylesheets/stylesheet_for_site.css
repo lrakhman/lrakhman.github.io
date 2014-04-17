@@ -24,12 +24,13 @@ header h1{
 a {
 
   font-weight: strong;
+  color: #D685BA;
   font-size: 150%;
   text-shadow: black 0.1em 0.1em 0.2em
 }
 
 header a:visited {
-  color: #D685BA;
+  color: #CC90E4;
 }
 
 header a:hover {
