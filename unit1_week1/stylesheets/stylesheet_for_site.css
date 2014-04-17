@@ -61,15 +61,13 @@ p {
   padding: 0;
   margin: 0;
   background-color: #545454;
+  font-size: 150%;
+  text-align: center;
+
 }
 
 .facts 
   background-color: #E8E8E8;
-}
-
-div h2 {
-  font-size: 150%;
-  text-align: center;
 }
 
 
