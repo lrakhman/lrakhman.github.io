@@ -104,8 +104,12 @@ img {
   padding: 3%;
 }
  
-#more ul li{
+#more a{
   font-size: 80%
+}
+
+#more a:hover{
+  color: #fff;
 }
 
 #blogs {
