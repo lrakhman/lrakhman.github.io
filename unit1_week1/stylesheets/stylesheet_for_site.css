@@ -106,8 +106,12 @@ img {
   background-color: #545454;
 }
 
-#footer{
+#blogs{
   background-color: #D0ECC6;
+}
+
+#footer{
+  background-color: #545454;
 }
 /* Fonts */
 @font-face {
