@@ -14,8 +14,13 @@ header li {
   display: inline;
 }
 
+header h1{
+  padding: 2%;
+  font-family: 'Lato'
+}
+
 a {
-  font-family: cursive;
+
   font-weight: strong;
   font-size: 150%;
   text-shadow: black 0.1em 0.1em 0.2em
