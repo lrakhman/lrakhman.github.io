@@ -52,16 +52,16 @@ p {
   text-align: center;
   color: #e5e5ff;
   font-size: 100%;
-  background-color: #545454;
   margin: 0;
 
 }
 
-img {
-  width: 300px;
-  height: 300px;
+#wrapper {
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  background-color: #545454;
 }
-
 
 
 
