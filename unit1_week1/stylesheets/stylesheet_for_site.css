@@ -112,6 +112,9 @@ img {
 
 #footer, #footer p{
   color: #fff;
+  font-size: 60%;
+  font-weight: strong;
+  text-shadow: black 0.1em 0.1em 0.2em;
   text-align: center;
   background-color: #999EA0;
 }
