@@ -80,6 +80,8 @@ h2 {
 h3 {
   font-size: 115%;
   padding: 1%;
+  color: rgb(94, 83, 83);
+  font-weight: strong;
 }
 
 /* Fonts */
