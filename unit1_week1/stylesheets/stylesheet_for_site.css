@@ -112,8 +112,13 @@ img {
   padding: 3%;
 }
 
-#city p, #city li{
+#city p{
   padding: 2%;
+}
+
+#city ul{
+  font-size: 70%;
+  list-style-type: square;
 }
 
 
