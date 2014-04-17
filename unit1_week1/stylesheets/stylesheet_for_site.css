@@ -100,15 +100,18 @@ img {
 
 #city {
   background-color: #7DB5D4;
+  padding: 3%;
 
 }
 
 #more{
   background-color: #545454;
+  padding: 3%;
 }
+
 #blogs {
   background-color: #D0ECC6;
-  padding: 2%;
+  padding: 3%;
 }
 #blogs li a{
   color: #464252;
