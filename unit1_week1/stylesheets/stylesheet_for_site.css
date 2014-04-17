@@ -57,12 +57,17 @@ p {
 }
 
 #wrapper {
-  width: 90%;
+  width: 100%;
   padding: 0;
   margin: 0;
   background-color: #545454;
 }
 
+.facts {
+  width: 300px;
+  height: 400px;
+  background-color: #E8E8E8;
+}
 
 
 
