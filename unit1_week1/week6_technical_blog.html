@@ -20,8 +20,6 @@
 
       If for nothing else learning functional programming is useful for the concepts that it contains. It will change the way you do programming and think about programming. And I would guess that in the future functional programming will be just as important as object oriented programming has been.<br /><br />
 
-      To get started you can chose to use a pure functional language such as Haskell, or you can use a hybrid one like F#.<br /><br />
-
       <strong>What are some of the big differences, pros and cons of functional programming vs. object-oriented programming?</strong><br /><br />
 
       Well object oriented programming is nice because it allows you to model your complex problem into hierarchies so you can simplify the problem. But it becomes very hard when you start to consider multi threaded programming while using mutable objects. In such cases you need to use heavy use of synchronization objects and it's near impossible to perfect a large application.<br /><br />
@@ -55,13 +53,21 @@
       <p>Here are some legitimate definitions that I found:</p>
 
       <ul>
-        <li>FUNCTIONAL PROGRAMMING: is when functions, not objects or procedures, are used as the fundamental building blocks of a program (think of Ruby's methods, but not used on classes).
+        <li>FUNCTIONAL PROGRAMMING: is when functions, not objects or procedures, are used as the fundamental building blocks of a program (think of Ruby's methods, but not used on classes). Functional programming emphasizes functions that produce results that depend only on their inputs and not on the program state—i.e. pure mathematical functions. It is a declarative programming paradigm, which means programming is done with expressions. In functional code, the output value of a function depends only on the arguments that are input to the function, so calling a function f twice with the same value for an argument x will produce the same result f(x) both times. Eliminating side effects, i.e. changes in state that do not depend on the function inputs, can make it much easier to understand and predict the behavior of a program, which is one of the key motivations for the development of functional programming.
         </li>
-        <li>OBJECT-ORIENTED PROGRAMMING: is a programming language model organized around objects rather than "actions" and data rather than logic. 
+        <li>OBJECT-ORIENTED PROGRAMMING: is a programming language model organized around objects rather than "actions" and data rather than logic. Rather than structure programs as code and data, an object-oriented system integrates the two using the concept of an "object". An object has state (data) and behavior (code). Objects correspond to things found in the real world. So for example, a graphics program will have objects such as circle, square, menu. An online shopping system will have objects such as shopping cart, customer, product. The shopping system will support behaviors such as place order, make payment, and offer discount. The objects are designed as class hierarchies. So, for example, with the shopping system there might be high level classes such as electronics product, kitchen product, and book. There may be further refinements for example under electronic products: CD Player, DVD player, etc. These classes and subclasses correspond to sets and subsets in mathematical logic.  
         </li>
       </ul>
 
 
+
+
+      <p>Some other good references:</p>
+      <ul>
+        <li><a href="https://docs.python.org/2.7/howto/functional.html">Functional Programming How-to</a></li>
+        <li><a href="https://www.coursera.org/course/progfun">Functional Programming Principles: Coursera</a></li>
+        <li><a href="http://www.cs.nott.ac.uk/~gmh/fun.html">Set of slides from Chapter 1: Introduction</a></li>
+      </ul>
 
  <p style="text-align:center;"><a href="../index.html">Take Me Back (Home)</a></p> 
 
