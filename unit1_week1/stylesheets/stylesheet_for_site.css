@@ -116,6 +116,12 @@ img {
   color: #fff;
 }
 
+#week2 {
+  background-color: red;
+  height: 400px;
+  width: auto;
+}
+
 #blogs {
   background-color: #D0ECC6;
   padding: 3%;
