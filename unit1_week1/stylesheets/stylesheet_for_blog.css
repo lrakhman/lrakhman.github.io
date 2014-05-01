@@ -22,7 +22,7 @@ a:hover {
 	text-decoration: underline; 
 }
 
-h4, div {
+div {
 	margin: 0px, auto;
     text-align: left;
     padding: 2%;
@@ -33,6 +33,7 @@ h4, div {
 	float:left;
 	width: 70%;
 	clear: both;
+	text-align: justify;
 }
 
 #nav {
@@ -52,8 +53,6 @@ h2, h4 {
 	font-weight: bold;
     color: #B92043;
     font-family: 'Lato', Garamond;
+    padding-left: 2%
 }
 
-h2 {
-	padding-left: 2%;
-}
