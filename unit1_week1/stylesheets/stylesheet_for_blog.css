@@ -1,6 +1,6 @@
 body { 
 	font: georgia, sans-serif;
-	background: #F5F5F5; 
+	background: #fff; 
 	margin:50px 0px; 
 	padding:0px;
 }
@@ -8,7 +8,7 @@ body {
 a {
 	font-weight: bold; 
     text-decoration: none; 
-	color: #fff;
+	color: #eee;
     text-shadow: black 0.1em 0.1em 0.2em
 }
 
@@ -35,11 +35,11 @@ h4, div {
 	clear: both;
 }
 
-#nav {
+/*#nav {
 	float:right;
 	width: 30%;
 	clear: both;
-}
+}*/
 
 ol li {
     font-size: 15px;
