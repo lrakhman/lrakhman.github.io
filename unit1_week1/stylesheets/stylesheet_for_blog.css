@@ -24,12 +24,11 @@ a:hover {
 }
 
 h4, section {
-	position: relative;
-    background-color: #DFDFDF;
-	margin-bottom: 10px;
+    background-color: #fff;
+	margin: 0px, auto;
     text-align: left;
-    padding: 2%;
-    width: 80%;
+    padding: 5%;
+    width: 70%;
 }
 
 ol li {
