@@ -9,7 +9,7 @@ body {
 a {
 	font-weight: bold; 
     text-decoration: none; 
-	color: #494259;
+	color: #fff;
     text-shadow: black 0.1em 0.1em 0.2em
 }
 
@@ -25,10 +25,10 @@ a:hover {
 
 h4, section {
 	position: relative;
-    background-color: #57c7ad;
+    background-color: #DFDFDF;
 	margin-bottom: 10px;
     text-align: left;
-    padding: 2%;
+    padding: 5%;
 }
 
 ol li {
