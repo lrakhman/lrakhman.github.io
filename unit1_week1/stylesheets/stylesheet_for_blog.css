@@ -32,11 +32,13 @@ h4, div {
 #main {
 	float:left;
 	width: 70%;
+	clear: both;
 }
 
 #nav {
 	float:right;
 	width: 30%;
+	clear: both;
 }
 
 ol li {
