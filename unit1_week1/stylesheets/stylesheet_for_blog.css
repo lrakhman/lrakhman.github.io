@@ -9,7 +9,7 @@ a {
 	font-weight: bold; 
     text-decoration: none; 
 	color: #B92043;
-    text-shadow: black 0.1em 0.1em 0.2em
+    text-shadow: gray 0.1em 0.1em 0.2em
 }
 
 a:visited { 
@@ -35,11 +35,12 @@ h4, div {
 	clear: both;
 }
 
-/*#nav {
-	float:right;
-	width: 30%;
+#nav {
+	border-left: thick solid #ff0000;
+	text-align: right;
+	padding-right: 2%;
 	clear: both;
-}*/
+}
 
 ol li {
     font-size: 15px;
