@@ -23,12 +23,6 @@ a:hover {
 	text-decoration: underline; 
 }
 
-div {
-	margin: 0px, auto;
-    text-align: left;
-    padding: 2%;
-
-}
 
 #main {
 	float:left;
@@ -36,6 +30,7 @@ div {
 	clear: both;
 	text-align: justify;
 	border-right: thin solid black;
+	padding: 3%;
 }
 
 #nav {
