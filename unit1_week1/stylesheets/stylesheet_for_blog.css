@@ -1,9 +1,9 @@
 body { 
 	font: georgia, sans-serif;
 	background: #F5F5F5; 
-	padding: 0;
-	border: 20px;
-	margin: 25px;
+	margin:50px 0px; 
+	padding:0px;
+	text-align:center;
 }
 
 a {
@@ -24,10 +24,10 @@ a:hover {
 }
 
 h4, section {
-    background-color: #fff;
+    background-color: #F8F8F8;
 	margin: 0px, auto;
     text-align: left;
-    padding: 5%;
+    padding: 2%;
     width: 70%;
 }
 
