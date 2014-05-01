@@ -3,6 +3,7 @@ body {
 	background: #fff; 
 	margin:50px 0px; 
 	padding:0px;
+	display: inline;
 }
 
 a {
