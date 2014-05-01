@@ -29,6 +29,14 @@ h4, section {
     width: 70%;
 }
 
+#main {
+	float:left;
+}
+
+#nav {
+	float:right;
+}
+
 ol li {
     font-size: 15px;
 }
