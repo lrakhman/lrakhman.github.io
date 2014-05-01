@@ -40,6 +40,7 @@ h4, div {
 	border-left: thin solid black;
 	text-align: right;
 	padding-right: 2%;
+	padding-left: 2%;
 	clear: both;
 }
 
@@ -51,4 +52,8 @@ h2, h4 {
 	font-weight: bold;
     color: #B92043;
     font-family: 'Lato', Garamond;
+}
+
+h2 {
+	padding-left: 2%;
 }
