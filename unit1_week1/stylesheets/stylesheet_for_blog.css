@@ -10,7 +10,7 @@ a {
 	font-weight: bold; 
     text-decoration: none; 
 	color: #B92043;
-    text-shadow: gray 0.1em 0.1em 0.2em
+    text-shadow: #BDB8B8 0.1em 0.1em 0.2em
 }
 
 a:visited { 
