@@ -36,6 +36,7 @@ h4, div {
 }
 
 #nav {
+	float: right;
 	border-left: thin solid black;
 	text-align: right;
 	padding-right: 2%;
@@ -49,4 +50,5 @@ ol li {
 h2, h4 {
 	font-weight: bold;
     color: #B92043;
+    font-family: 'Gruppo', cursive;
 }
