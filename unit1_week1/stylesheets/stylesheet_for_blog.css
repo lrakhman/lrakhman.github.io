@@ -9,14 +9,14 @@ body {
 a {
 	font-weight: bold; 
     text-decoration: none; 
-	color: #20B996;
+	color: #B92043;
     text-shadow: #BDB8B8 0.1em 0.1em 0.2em
 }
 
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #D4CDDC;
+	color: #20B996;
 }
 
 a:hover { 
