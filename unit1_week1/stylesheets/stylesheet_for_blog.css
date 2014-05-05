@@ -30,9 +30,10 @@ a:hover {
 	width: 70%;
 	clear: both;
 	text-align: justify;
-	border-right: thin solid black;
+	border-right: thin solid lightgrey;
+	border-left: thin solid lightgrey;
 	margin-left: 40px;
-	padding: 3%;
+	padding: 4%;
 	padding-top: 0px;
 }
 
