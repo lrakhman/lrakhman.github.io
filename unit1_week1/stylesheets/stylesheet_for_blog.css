@@ -31,7 +31,7 @@ a:hover {
 	clear: both;
 	text-align: justify;
 	border-right: thin solid black;
-	border-left: thin solid black;
+	margin-left: 30px;
 	padding: 3%;
 	padding-top: 0px;
 }
@@ -50,6 +50,7 @@ h2, h4 {
     font-family: 'Lato', Garamond;
     padding-left: 2%;
     width: 70%;
+    margin-left: 30px;
 }
 
 p {
