@@ -31,6 +31,7 @@ a:hover {
 	clear: both;
 	text-align: justify;
 	border-right: thin solid black;
+	border-left: thin solid black;
 	padding: 3%;
 	padding-top: 0px;
 }
