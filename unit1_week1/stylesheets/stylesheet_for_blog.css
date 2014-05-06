@@ -37,6 +37,10 @@ a:hover {
 	padding-top: 0px;
 }
 
+blockquote {
+	border-left: 10px solid #999;
+}
+
 #nav {
 	float: right;
 	text-align: right;
